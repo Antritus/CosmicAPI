@@ -1,6 +1,9 @@
-package me.antritus.astral;
+package me.antritus.astral.configuration;
 
-import me.antritus.astral.cosmiccapital.astrolminiapi.Configuration;
+import me.antritus.astral.AdvancedPlugin;
+import me.antritus.astral.properties.Property;
+import me.antritus.astral.properties.SimpleProperty;
+import me.antritus.astral.user.ISettings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -14,14 +17,14 @@ import java.util.HashMap;
 public class CoreSettings implements ISettings {
 	private final HashMap<String, SimpleProperty<?>> properties = new HashMap<>();
 	private final Configuration config;
-	private final FactionsPlugin main;
+	private final AdvancedPlugin main;
 
-	public CoreSettings(FactionsPlugin main) {
+	public CoreSettings(AdvancedPlugin main) {
 		this.main = main;
 		this.config = main.getConfig();
 	}
 
-	public FactionsPlugin getMain() {
+	public AdvancedPlugin getMain() {
 		return main;
 	}
 

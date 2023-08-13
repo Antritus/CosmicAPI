@@ -1,5 +1,6 @@
-package me.antritus.astral.cosmiccapital.astrolminiapi;
+package me.antritus.astral.configuration;
 
+import me.antritus.astral.utils.ColorUtils;
 import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 

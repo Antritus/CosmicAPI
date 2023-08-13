@@ -1,10 +1,11 @@
-package me.antritus.astral;
+package me.antritus.astral.commands;
 
+import me.antritus.astral.AdvancedPlugin;
 import org.bukkit.command.CommandSender;
 
 public class SubCommandClass {
-	protected final AdvancedFactionsPlugin main;
-	public SubCommandClass(AdvancedFactionsPlugin main){
+	protected final AdvancedPlugin main;
+	public SubCommandClass(AdvancedPlugin main){
 		this.main = main;
 	}
 	public void message(CommandSender sender, String key, String... placeholders){

@@ -1,4 +1,6 @@
-package me.antritus.astral;
+package me.antritus.astral.databases;
+
+import me.antritus.astral.AdvancedPlugin;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,11 +12,11 @@ import java.sql.SQLException;
  */
 
 public class CoreDatabase {
-	private final FactionsPlugin main;
+	private final AdvancedPlugin main;
 
 	private Connection connection;
 
-	public CoreDatabase(FactionsPlugin main) {
+	public CoreDatabase(AdvancedPlugin main) {
 		this.main = main;
 
 	}

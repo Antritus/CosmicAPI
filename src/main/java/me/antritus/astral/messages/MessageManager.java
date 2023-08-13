@@ -1,6 +1,8 @@
-package me.antritus.astral;
+package me.antritus.astral.messages;
 
 import com.google.common.collect.ImmutableMap;
+import me.antritus.astral.AdvancedPlugin;
+import me.antritus.astral.configuration.Configuration;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
@@ -27,14 +29,14 @@ import java.util.*;
  */
 public class MessageManager {
 	private final MiniMessage miniMessage = MiniMessage.miniMessage();
-	private final FactionsPlugin main;
+	private final AdvancedPlugin main;
 	public final Configuration messageConfig;
 	private final BukkitAudiences bukkitAudiences;
 	private final ImmutableMap<String, Component> placeholders;
 	private final Map<String, Component> messages = new LinkedHashMap<>();
 	private final ImmutableMap<String, String> warningActions;
 	private final Map<String, Boolean> unused = new LinkedHashMap<>();
-	public MessageManager(FactionsPlugin main){
+	public MessageManager(AdvancedPlugin main){
 		BukkitAudiences bukkitAudiences1;
 		this.main = main;
 		try {

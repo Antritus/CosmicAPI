@@ -1,7 +1,7 @@
-package me.antritus.astral.cosmiccapital.astrolminiapi;
+package me.antritus.astral.commands;
 
 
-import me.antritus.astral.cosmiccapital.antsfactions.FactionsPlugin;
+import me.antritus.astral.AdvancedPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 import org.bukkit.command.defaults.BukkitCommand;
@@ -25,9 +25,9 @@ public abstract class CoreCommand extends BukkitCommand {
 			e.printStackTrace();
 		}
 	}
-	protected final FactionsPlugin main;
+	protected final AdvancedPlugin main;
 
-	protected CoreCommand(FactionsPlugin main, @NotNull String name) {
+	protected CoreCommand(AdvancedPlugin main, @NotNull String name) {
 		super(name);
 		this.main = main;
 	}

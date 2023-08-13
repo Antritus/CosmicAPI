@@ -1,5 +1,7 @@
-package me.antritus.astral;
+package me.antritus.astral.user;
 
+import me.antritus.astral.properties.Property;
+import me.antritus.astral.properties.SimpleProperty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,4 +1,4 @@
-package me.antritus.astral;
+package me.antritus.astral.commands;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

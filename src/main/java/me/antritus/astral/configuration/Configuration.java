@@ -1,4 +1,4 @@
-package me.antritus.astral.cosmiccapital.astrolminiapi;
+package me.antritus.astral.configuration;
 
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;

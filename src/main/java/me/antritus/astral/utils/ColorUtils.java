@@ -1,4 +1,4 @@
-package me.antritus.astral.cosmiccapital.astrolminiapi;
+package me.antritus.astral.utils;
 
 
 import net.kyori.adventure.text.Component;

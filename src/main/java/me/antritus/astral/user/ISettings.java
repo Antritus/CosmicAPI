@@ -1,6 +1,7 @@
-package me.antritus.astral;
+package me.antritus.astral.user;
 
-import me.antritus.astral.cosmiccapital.astrolminiapi.Configuration;
+import me.antritus.astral.configuration.Configuration;
+import me.antritus.astral.properties.Property;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

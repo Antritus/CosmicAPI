@@ -1,6 +1,7 @@
-package me.antritus.astral;
+package me.antritus.astral.commands;
 
 
+import me.antritus.astral.AdvancedPlugin;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -23,7 +24,7 @@ import java.util.*;
  * </p>
  */
 public class CommandParser {
-	private final AdvancedFactionsPlugin main;
+	private final AdvancedPlugin main;
 	private final Map<String, SubCommand> subCommands = new LinkedHashMap<>();
 	private final Map<String, Method> subCommandMethods = new LinkedHashMap<>();
 	private final Map<String, Object> subCommandInstances = new LinkedHashMap<>();
@@ -37,7 +38,7 @@ public class CommandParser {
 	 *
 	 * @param main the Main instance
 	 */
-	public CommandParser(AdvancedFactionsPlugin main) {
+	public CommandParser(AdvancedPlugin main) {
 		this.main = main;
 	}
 
@@ -50,7 +51,7 @@ public class CommandParser {
 	 */
 	public void register(Class<?> clazz) {
 		try {
-			Object obj = clazz.getConstructor(AdvancedFactionsPlugin.class).newInstance(main);
+			Object obj = clazz.getConstructor(AdvancedPlugin.class).newInstance(main);
 			Method[] methods = clazz.getMethods();
 
 			for (Method method : methods) {

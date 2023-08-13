@@ -1,4 +1,4 @@
-package me.antritus.astral;
+package me.antritus.astral.commands;
 
 public enum SubCommandCategory {
 	ADMIN("admin"),

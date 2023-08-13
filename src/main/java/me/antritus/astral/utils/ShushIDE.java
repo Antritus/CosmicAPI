@@ -1,4 +1,4 @@
-package me.antritus.astral;
+package me.antritus.astral.utils;
 
 /**
  * @author Antritus

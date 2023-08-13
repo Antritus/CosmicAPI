@@ -1,4 +1,4 @@
-package me.antritus.astral;
+package me.antritus.astral.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;

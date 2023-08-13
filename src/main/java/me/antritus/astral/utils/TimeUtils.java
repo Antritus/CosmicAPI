@@ -1,4 +1,4 @@
-package me.antritus.astral;
+package me.antritus.astral.utils;
 
 import java.time.Duration;
 import java.util.HashMap;
